@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 14rem 2.4rem;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%) no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+}
+.question :hover{
+  color: #F47B56;
+}
+.active h2{
+  color: #1E1F36;
+  font-weight: 700;
+}
+.active p{
+display: block;
+}
+.active img{
+  transform: rotate(180deg);
+}
+p{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #787887;
+  text-align: start;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  display: none;
+}
+h1 {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: hsba(238, 45%, 21%, 1);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.container {
+  background: white;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  padding: 13rem 2.4rem 4.8rem 2.4rem;
+  position: relative;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #4B4C5F;
+}
+hr{
+    background: hsba(240, 1%, 92%, 1);
+   height: 1px;
+   margin-bottom: 1.9rem;
+}
+.woman {
+  z-index: 1;
+    position: absolute;
+    top: -8rem;
+    left: 3rem;
+}
+.pattern {
+  position: absolute;
+  z-index: 1;
+  left: 3rem;
+  top: -3rem;
+  
+  
+}
+.woman, .pattern{
+  width: 23.6rem;
+  height: 13.9rem;
+}
+.desktop{
+  display: none;
+}
+@media (min-width: 1360px){
+.mobile{
+  display: none;
+}
+.desktop{
+  display: block;
+}
+.img-box{
+  position: relative;
+  left: -7rem;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0;
+}
+.box{
+  position: absolute;
+  bottom: 3.5rem;
+}
+.container{
+  display: flex;
+  align-items: center;
+  gap: 8.8rem;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+border-radius: 23px;
+overflow: hidden;
+
+}
+.question-answer{
+  padding: 6.5rem 8.5rem 9.3rem 0;
+  width: 37rem;
+}
+h2{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+}
