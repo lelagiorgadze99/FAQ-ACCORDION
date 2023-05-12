@@ -28,9 +28,7 @@ body {
   margin-bottom: 1.8rem;
   cursor: pointer;
 }
-.question :hover{
-  color: #F47B56;
-}
+
 .active h2{
   color: #1E1F36;
   font-weight: 700;
@@ -130,5 +128,8 @@ overflow: hidden;
 h2{
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+.question :hover{
+  color: #F47B56;
 }
 }
